@@ -1,0 +1,21 @@
+/*for json code run use middleware that's why we call json(),
+      *_____ work in json *____
+we use these command 
+
+/               **header**
+Content-Type  : application/json 
+
+/               **body**
+{
+    "userName": "Alishba",
+    "email" : "Alishbasheimh.com"
+}*/
+
+/             ** what is JWT? **
+
+// -  json web token is an opened standard.
+//? 1. **Authentication** Verifying the identity of a user or client.
+//? 2. **Auterization** Determing what action a user or client is allowed to perform.
+
+we always save web token in cookies and local storage.
+

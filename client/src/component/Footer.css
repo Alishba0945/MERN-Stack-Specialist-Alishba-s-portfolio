@@ -1,0 +1,30 @@
+footer{
+  padding: 3.2rem;
+  background: linear-gradient(267deg, #4da5ca 0.36%, #c142d5 102.06%);
+  margin-top: 200px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 35px;
+}
+
+@media (max-width: 768px){
+  footer{
+    font-size: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

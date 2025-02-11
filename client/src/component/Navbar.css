@@ -1,0 +1,116 @@
+.container{
+  max-width: 140rem;
+  padding: 4.2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+ul{
+  display: flex;
+  gap: 65px;
+  list-style: none;
+}
+
+Navlink{
+ color: white;
+}
+
+.container li{
+  font-size: 28px;
+}
+
+
+.signature {
+  font-family: initial;
+  font-size: 2rem;
+  color:#003145;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: signatureAnimation 2s ease-out infinite;
+  margin-top: 50px;
+}
+
+@keyframes signatureAnimation {
+  0% {
+    transform: scale(1);
+    color: #2791be;
+  }
+  50% {
+    transform: scale(1.1);
+    color:#a462ae;
+  }
+  100% {
+    transform: scale(1);
+    color:#15a01e;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .container li {
+    padding: 10px 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .container {
+    display: block;
+  }
+
+  .container ul{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    margin-top: 20px;
+  }
+  .signature {
+    font-family: initial;
+    font-size: 3rem;
+    margin-left: 5px;
+  }
+
+}
+
+
+@media (max-width: 1000px){
+  .container  ul {
+    display: flex;
+    list-style: none;
+    margin-top: 20px;
+    margin-top: 3%;
+    font-size: 2rem;
+}
+
+.container{
+  padding: 2%;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.signature {
+  font-size: 3rem;
+}
+}
+
+
+
+
+
+
+
+
+
+

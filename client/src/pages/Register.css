@@ -1,0 +1,87 @@
+
+.main-h1heading {
+ margin-left: 35%;
+ background: linear-gradient(267deg, #2e91bc 0.36%, #c142d5 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;  
+  margin-top: 5%;
+}
+
+.container-of-register{
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+
+.container-of-register label{
+  color: #2e91bc;
+  font-size: 34px;
+  background: linear-gradient(267deg, #3a8aac 0.36%, #871798 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-weight: 600;
+  margin-top: 30px;
+  display: flex;
+ 
+}
+
+.container-of-register input{
+  
+  border: none;
+  width: 700px;
+  height: 75px;
+  padding-left: 25px;
+  border-radius: 5px;
+  background: #444448;
+  color: white;
+  font-family: inherit;
+  font-size: 24px;
+}
+
+.register-submit{
+  border: none;
+  color: white;
+  padding: 24px 55px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #4da5ca 0.36%, #c142d5 102.06%);
+  cursor: pointer;
+  font-size: 24px;
+  font-family: inherit;
+  transition: 0.3s;
+  display: flex;
+  margin: 25px;
+}
+
+.register-submit:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+
+@media (max-width: 768px){
+  .main-h1heading {
+    margin-left: 10%;
+  }
+  .container-of-register input{
+    width: 600px;
+  }
+}
+
+@media (max-width: 1000px){
+  .main-h1heading{
+    margin-left: 20%;
+    margin: 7% 0;
+  }
+}
+
+
+
+
+
+
+

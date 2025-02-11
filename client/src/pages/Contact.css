@@ -1,0 +1,99 @@
+.main-heading{
+  margin-left: 40%;
+  background: linear-gradient(267deg, #2e91bc 0.36%, #c142d5 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 75px;  
+
+}
+
+.distance{
+    display:flexbox;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    margin-right: 80px;
+}
+
+.section-form{
+  margin-right: 300px;
+}
+.contact-img{
+  margin-left: 100px;
+}
+
+.section-form label{
+  color: #2e91bc;
+  font-size: 34px;
+  background: linear-gradient(267deg, #3a8aac 0.36%, #871798 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  font-weight: 600;
+  margin-top: 30px;
+  display: flex;
+ 
+}
+
+.section-form input{
+  
+  border: none;
+  width: 700px;
+  height: 75px;
+  padding-left: 25px;
+  border-radius: 5px;
+  background: #444448;
+  color: white;
+  font-family: inherit;
+  font-size: 24px;
+}
+
+.section-form textarea{
+  width: 600px;
+  border: none;
+  padding: 30px;
+  border-radius: 4px;
+  background: #444448;
+  color: white;
+  font-family: outfit;
+  font-size: 24px;
+  
+}
+
+.contact-submit{
+  border: none;
+  color: white;
+  padding: 24px 55px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #4da5ca 0.36%, #c142d5 102.06%);
+  cursor: pointer;
+  font-size: 24px;
+  font-family: inherit;
+  transition: 0.3s;
+  display: flex;
+}
+
+.contact-submit:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+
+@media (max-width: 768px){
+  .main-heading{
+    margin-left: 20%;
+  }
+  .contact-img{
+    margin-left: auto;
+  }
+  .section-form input{
+    width: 600px;
+  }
+}
+
+@media(max-width: 1000px){
+  .main-heading {
+   margin: 5% 0;
+  }
+}

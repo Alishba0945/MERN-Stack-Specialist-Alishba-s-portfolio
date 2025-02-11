@@ -1,0 +1,122 @@
+
+
+/* Heading Styling */
+.services-heading {
+  margin-left: 32%;
+  background: linear-gradient(267deg, #2e91bc 0.36%, #c142d5 102.06%);
+   background-clip: text;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 75px;
+}
+
+/* Grid Layout */
+.services-container {
+  display: grid ;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3500fr));
+  gap: 150px;
+  margin-top: 50px;
+  padding-left: 500px;
+  padding-right: 500px;
+}
+
+/* Service Card Styling */
+.service-card {
+  background: white;
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow: 0 22px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.22s ease-in-out;
+}
+
+/* Hover Effect */
+.service-card:hover {
+  transform: translateY(-33px);
+  box-shadow: 0 20px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Price & Provider Styling */
+.price {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.service-card a{
+  margin-top: 100px;
+  margin: 25px;
+  padding: 22px;
+  text-align: center;
+  gap: 20px;
+  
+}
+
+.provider {
+  background: linear-gradient(267deg, #0d445c 0.36%, #9516a9 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.service-name{
+  font-size: 22px;
+}
+
+/* No Services Message */
+.no-services {
+  text-align: center;
+  color: gray;
+  font-size: 20px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(500);
+  }
+}
+
+@media (max-width: 768px){
+  .services-heading{
+    margin-left: 17%;
+    font-size: 50px;
+  }
+ .service-card{
+  margin-left: auto;
+  padding: 15px;
+  }
+ .services-container{
+  padding-left: 200px;
+ }
+
+}
+
+
+@media (max-width: 1000px){
+  .services-heading{
+    margin: 10% 10%;
+  }
+  .services-container {
+    padding-left: 50px;
+   
+}
+}
+

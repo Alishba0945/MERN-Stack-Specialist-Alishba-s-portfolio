@@ -1,0 +1,249 @@
+.section-hero{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-action {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 265px;
+  margin-top: 50px;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* Buttons */
+.hero-contact,
+.hero-resume {
+  padding: 18px 25px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #4da5ca 0.36%, #c142d5 102.06%);
+  cursor: pointer;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+/* Hover Effects */
+.hero-contact:hover,
+.hero-resume:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 10px 20px rgba(197, 66, 213, 0.4);
+}
+
+/* Button Shine Effect */
+.hero-contact::before,
+.hero-resume::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transform: skewX(-45deg);
+  transition: left 0.5s;
+}
+
+.hero-contact:hover::before,
+.hero-resume:hover::before {
+  left: 150%;
+}
+
+/* Hero Title Animation */
+.hero-content h1 {
+  background: linear-gradient(267deg, #4da5ca 0.36%, #c142d5 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 55px;
+  opacity: 0;
+  margin-top: 45px;
+  margin-left: 120px;
+  animation: fadeInDown 1.5s ease-in-out forwards;
+}
+
+/* heading h1 */
+
+.signature1 {
+  font-family: initial;
+  font-size: 2.9rem;
+  color:#003145;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: signatureAnimation 2s ease-out infinite;
+  margin-top: 50px;
+}
+
+@keyframes signatureAnimation {
+  0% {
+    transform: scale(1);
+    color: #11272d;
+  }
+  50% {
+    transform: scale(1.1);
+    color:#a462ae;
+  }
+  100% {
+    transform: scale(1);
+    color:#15a01e;
+  }
+}
+
+/* Hero Subtitle */
+.hero-content h4 {
+  background: linear-gradient(267deg, #4da5ca 0.36%, #c142d5 102.06%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 25px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+
+.hero-content{
+  margin: 0 28%;
+}
+
+/* Text Block */
+.top {
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+  margin-top: 25px;
+  font-family: initial;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+/* Default container layout (for larger screens) */
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px;
+  align-items: center;
+}
+
+
+
+
+/* MERN Image Animation */
+.mern {
+  margin: 2% 40%;
+  transform: scale(0.8);
+  opacity: 0;
+  animation: zoomIn 1.5s ease-in-out forwards;
+  animation-delay: 1.2s;
+  display: flex;
+  
+}
+
+/* Keyframe Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Media query for small screens (max-width: 1000px) */
+@media (max-width: 1000px){
+  .mern {
+    margin: 5% 27%;
+  }
+  .hero-content {
+    margin-left: 2rem;
+    
+}
+.top {
+  width: 130%;
+}
+.signature1{
+  font-size: 1.2em;
+  margin-left: 10%;
+}
+}
+
+
+/* Media query for small screens (max-width: 768px) */
+@media (max-width: 768px){
+  .container grid grid-two-cols {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .mern {
+    order: -1; /* Move the image above the content */
+    margin-bottom: 20px; /* Add some space between image and content */
+    display: grid;
+    margin: 5% 15%;
+    border-radius: 2rem;
+    margin-top: 30px;
+
+  }
+
+  .hero-content{
+    font-size: 45px;
+    margin-left: auto;
+ }
+ .signature1{
+  font-size: 30px;
+  margin-left: 10px;
+ }
+
+.top{
+  width: 140%;
+  margin-left: auto;
+}
+.hero-action{
+  margin-left: 115px;
+}
+
+
+}
+
+
+
